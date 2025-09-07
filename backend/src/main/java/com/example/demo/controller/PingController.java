@@ -10,4 +10,9 @@ public class PingController {
     public String ping() {
         return "pong";
     }
+
+    @GetMapping("/health")
+    public String health() {
+        return "Running...";
+    }
 }
